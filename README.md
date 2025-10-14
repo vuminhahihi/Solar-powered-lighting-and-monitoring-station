@@ -53,7 +53,7 @@ The system streams live camera video via Wi-Fi and intelligently controls lighti
 All mechanical parts are designed in **SolidWorks** for 3D printing and assembly.  
 The design includes the housing, camera cover, pin holders, and light frame.
 
-Link driver: https://drive.google.com/drive/folders/1l7hxOJH6RIHsx_lYpqnFdXQjru6f09sb?usp=sharing
+Link driver: (https://drive.google.com/drive/folders/18TKJEjqy5pJyPjrkYdSRSiQuboAVnY7x?usp=sharing).
 
 👨‍💻 **Designer:** *Vũ Ngọc Minh*
 
