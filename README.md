@@ -12,7 +12,6 @@
 This project demonstrates a **Smart Light IoT System** built using **ESP32-CAM**, **DHT11**, **LDR sensor**, and **Blynk IoT Cloud**.  
 The system streams live camera video via Wi-Fi and intelligently controls lighting automatically or manually through the Blynk app.
 
-
 ---
 
 ## ⚙️ Features
@@ -54,18 +53,20 @@ The system streams live camera video via Wi-Fi and intelligently controls lighti
 All mechanical parts are designed in **SolidWorks** for 3D printing and assembly.  
 The design includes the housing, camera cover, pin holders, and light frame.
 
-| Part Name | File | Description |
-|------------|------|-------------|
-| Khung treo | `mimh-Model.pdf1.pdf` | Main frame for camera/light mount |
-| Giá đỡ pin cạnh | `mimh-Model.pdf3.pdf` | Side battery support |
-| Hộp pin | `mimh-Model.pdf4.pdf` / `mimh-Model.pdf8.pdf` | Battery case |
-| Chốt pin | `mimh-Model.pdf5.pdf` | Locking pin |
-| Nắp hộp camera | `mimh-Model.pdf6.pdf` | Camera enclosure lid |
-| Nắp hộp pin | `mimh-Model.pdf7.pdf` | Battery lid |
-| Khớp nối trục | `mimh-Model.pdf9.pdf` | Shaft connector |
-| Giá đỡ pin giữa | `mimh-Model.pdf10.pdf` | Middle battery support |
- 
-👨‍💻 **Designer:** *Vũ Ngọc Minh*  
+| Hình ảnh | Tên chi tiết | Mô tả |
+|:--:|:--|:--|
+| ![Khớp bi cầu](images/khopbicau.PNG) | Khớp bi cầu | Dùng để điều chỉnh góc xoay của camera |
+| ![LED housing](images/led.PNG) | Vỏ đèn LED | Bảo vệ và cố định module LED |
+| ![Mạch chính](images/machchinh.PNG) | Mạch chính | Bo mạch chứa ESP32-CAM và module nguồn |
+| ![Pin](images/pin.PNG) | Hộp pin | Chứa pin cấp nguồn cho toàn hệ thống |
+| ![Thanh ngang](images/thanhngang.PNG) | Thanh ngang | Giá đỡ liên kết giữa hộp pin và khung chính |
+| ![Trẹo đèn](images/treoden.PNG) | Trẹo đèn | Cố định và hướng đèn về khu vực mong muốn |
+| ![Khung nhôm 220mm](images/220mm.PNG) | Thanh nhôm định hình 220mm | Khung chính lắp các module |
+| ![Hộp camera](images/hopcam.PNG) | Hộp camera | Bảo vệ module ESP32-CAM |
+| ![Hộp điện](images/hopdien.PNG) | Hộp điện | Chứa dây nối và module điện |
+| ![Kê góc vuông](images/kegocvuong.PNG) | Kê góc vuông | Giữ cố định góc giữa các thanh nhôm |
+
+👨‍💻 **Designer:** *Vũ Ngọc Minh*
 
 ---
 
@@ -79,9 +80,6 @@ The design includes the housing, camera cover, pin holders, and light frame.
 ## 🧾 License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-
----
-
 
 ---
 
