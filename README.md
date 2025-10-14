@@ -9,101 +9,85 @@
 
 ## 🧩 Overview
 
-This project implements a **Smart Lighting System** using an **ESP32-CAM (AI-Thinker)** board combined with:
-- **DHT11 sensor** (temperature & humidity)
-- **Light sensor (LDR)**
-- **Blynk IoT app** for remote monitoring and control  
-- **ESPAsyncWebServer** for live MJPEG video streaming via Wi-Fi  
+This project demonstrates a **Smart Light IoT System** built using **ESP32-CAM**, **DHT11**, **LDR sensor**, and **Blynk IoT Cloud**.  
+The system streams live camera video via Wi-Fi and intelligently controls lighting automatically or manually through the Blynk app.
 
-It supports **manual and automatic lighting modes**, and periodically uploads sensor data to **Blynk Cloud**.
+![smartlight-system](https://github.com/user-attachments/assets/0e34c651-8434-48d3-b859-082767846b66)
 
 ---
 
 ## ⚙️ Features
 
-✅ Real-time video streaming (MJPEG via HTTP)  
-✅ DHT11 temperature & humidity monitoring  
-✅ Automatic or manual LED lighting control  
-✅ Light detection using LDR sensor  
-✅ Remote monitoring & control via Blynk mobile app  
-✅ Local web interface for camera preview  
-✅ Auto reconnect to Wi-Fi and Blynk  
+- 📸 Real-time video streaming (MJPEG)
+- 🌡️ Temperature & humidity monitoring (DHT11)
+- 💡 Automatic and manual light control
+- 🌞 Light-dependent switching (LDR)
+- 🌐 Remote access via Blynk mobile app
+- 🔁 Auto reconnect Wi-Fi & Cloud
 
 ---
 
-## 🧰 Hardware Requirements
+## 🧰 Hardware Components
 
 | Component | Description |
 |------------|-------------|
-| ESP32-CAM (AI-Thinker) | Main board with camera module |
+| ESP32-CAM (AI-Thinker) | Main MCU + camera |
 | DHT11 | Temperature & humidity sensor |
-| LDR + Resistor | Light sensor circuit |
-| LED | Controlled lighting device |
-| Power Supply | 5V (≥2A recommended) |
+| LDR sensor | Light intensity detection |
+| LED | Smart lighting device |
+| Power | 5V DC (≥2A recommended) |
 
 ---
 
-## 🧠 Pin Configuration
+## ⚡ Circuit Overview
 
-| Component | GPIO Pin |
-|------------|----------|
-| DHT11 Data | GPIO 14 |
-| LDR Sensor | GPIO 12 |
-| LED Output | GPIO 2 |
-| Camera Pins | AI-Thinker default configuration |
-
-> The code uses the standard AI-Thinker camera pin mapping.
+| Component | GPIO |
+|------------|------|
+| DHT11 | GPIO 14 |
+| LDR | GPIO 12 |
+| LED | GPIO 2 |
+| Camera | Standard AI Thinker mapping |
 
 ---
 
-## 📦 Software Dependencies
+## 🧩 Mechanical Design (SolidWorks)
 
-Install the following libraries in **Arduino IDE** or **PlatformIO**:
+All mechanical parts are designed in **SolidWorks** for 3D printing and assembly.  
+The design includes the housing, camera cover, pin holders, and light frame.
 
-- `esp_camera`
-- `WiFi`
-- `AsyncTCP`
-- `ESPAsyncWebServer`
-- `BlynkSimpleEsp32`
-- `DHT sensor library`
-
----
-
-## 🔧 Configuration
-
-### 🔑 Blynk Setup
-Create a new template in **Blynk Cloud**:
-- **Template ID:** `"TMPL6x4hXdSRt"`
-- **Template Name:** `"Denthongminh"`
-- **Auth Token:** (replace with your token)
-
-Assign the following **Virtual Pins**:
-| Virtual Pin | Function |
-|--------------|-----------|
-| V0 | Light state indicator |
-| V1 | Temperature |
-| V2 | Humidity |
-| V3 | Device IP |
-| V4 | Manual LED control |
-| V5 | Mode selection (Auto / Manual) |
+| Part Name | File | Description |
+|------------|------|-------------|
+| Khung treo | `mimh-Model.pdf1.pdf` | Main frame for camera/light mount |
+| Giá đỡ pin cạnh | `mimh-Model.pdf3.pdf` | Side battery support |
+| Hộp pin | `mimh-Model.pdf4.pdf` / `mimh-Model.pdf8.pdf` | Battery case |
+| Chốt pin | `mimh-Model.pdf5.pdf` | Locking pin |
+| Nắp hộp camera | `mimh-Model.pdf6.pdf` | Camera enclosure lid |
+| Nắp hộp pin | `mimh-Model.pdf7.pdf` | Battery lid |
+| Khớp nối trục | `mimh-Model.pdf9.pdf` | Shaft connector |
+| Giá đỡ pin giữa | `mimh-Model.pdf10.pdf` | Middle battery support |
+ 
+👨‍💻 **Designer:** *Vũ Ngọc Minh*  
 
 ---
 
-## 🚀 How to Upload
+## 🎬 Demo Video
 
-1. Open the `.ino` or `.cpp` file in **Arduino IDE**.  
-2. Select **Board:** “AI Thinker ESP32-CAM”.  
-3. Choose the correct **Port**.  
-4. Click **Upload**.  
-5. Open the Serial Monitor (`115200 baud`) to check logs.  
-6. Once connected, the ESP32-CAM will:
-   - Connect to your Wi-Fi and Blynk
-   - Display its IP in Serial/Blynk
-   - Start the HTTP streaming server
+🎥 Watch project demonstration on YouTube:  
+[![Smart Light Video](https://img.youtube.com/vi/zmhjNo55GJg/0.jpg)](https://youtu.be/zmhjNo55GJg)
 
 ---
 
-## 🌐 Web Streaming Access
+## 🧾 License
 
-After booting, open your browser and go to:
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
+---
+
+
+---
+
+## 📚 References
+
+- [Blynk Cloud Platform](https://blynk.cloud/)
+- [ESP32-CAM Documentation](https://randomnerdtutorials.com/esp32-cam-projects/)
+- [ESPAsyncWebServer GitHub](https://github.com/me-no-dev/ESPAsyncWebServer)
