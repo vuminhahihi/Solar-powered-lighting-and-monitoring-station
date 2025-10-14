@@ -12,7 +12,6 @@
 This project demonstrates a **Smart Light IoT System** built using **ESP32-CAM**, **DHT11**, **LDR sensor**, and **Blynk IoT Cloud**.  
 The system streams live camera video via Wi-Fi and intelligently controls lighting automatically or manually through the Blynk app.
 
-![smartlight-system](https://github.com/user-attachments/assets/0e34c651-8434-48d3-b859-082767846b66)
 
 ---
 
