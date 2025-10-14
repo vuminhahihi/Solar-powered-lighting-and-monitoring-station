@@ -53,18 +53,7 @@ The system streams live camera video via Wi-Fi and intelligently controls lighti
 All mechanical parts are designed in **SolidWorks** for 3D printing and assembly.  
 The design includes the housing, camera cover, pin holders, and light frame.
 
-| Hình ảnh | Tên chi tiết | Mô tả |
-|:--:|:--|:--|
-| ![Khớp bi cầu](images/khopbicau.PNG) | Khớp bi cầu | Dùng để điều chỉnh góc xoay của camera |
-| ![LED housing](images/led.PNG) | Vỏ đèn LED | Bảo vệ và cố định module LED |
-| ![Mạch chính](images/machchinh.PNG) | Mạch chính | Bo mạch chứa ESP32-CAM và module nguồn |
-| ![Pin](images/pin.PNG) | Hộp pin | Chứa pin cấp nguồn cho toàn hệ thống |
-| ![Thanh ngang](images/thanhngang.PNG) | Thanh ngang | Giá đỡ liên kết giữa hộp pin và khung chính |
-| ![Trẹo đèn](images/treoden.PNG) | Trẹo đèn | Cố định và hướng đèn về khu vực mong muốn |
-| ![Khung nhôm 220mm](images/220mm.PNG) | Thanh nhôm định hình 220mm | Khung chính lắp các module |
-| ![Hộp camera](images/hopcam.PNG) | Hộp camera | Bảo vệ module ESP32-CAM |
-| ![Hộp điện](images/hopdien.PNG) | Hộp điện | Chứa dây nối và module điện |
-| ![Kê góc vuông](images/kegocvuong.PNG) | Kê góc vuông | Giữ cố định góc giữa các thanh nhôm |
+Link driver: https://drive.google.com/drive/folders/1l7hxOJH6RIHsx_lYpqnFdXQjru6f09sb?usp=sharing
 
 👨‍💻 **Designer:** *Vũ Ngọc Minh*
 
