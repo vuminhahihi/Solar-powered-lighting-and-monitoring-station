@@ -1,5 +1,5 @@
 # 🏠 Smart Light System with ESP32-CAM, DHT11, and Blynk
-<img src="https://user-images.githubusercontent.com/47092672/97660147-142f1f00-1ab4-11eb-9d14-48f30a666cdc.PNG" width="12%" align="right">
+<img src="https://github.com/user-attachments/assets/your_image_id_here.png" width="20%" align="right">
 
 [![Platform - ESP32](https://img.shields.io/badge/Platform-ESP32-blue)](https://www.espressif.com/en/products/socs/esp32)
 [![Library - Blynk](https://img.shields.io/badge/Library-Blynk-green)](https://blynk.io/)
